@@ -1,0 +1,162 @@
+body{
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    background: #EDEDED;
+}
+
+.panel{
+    background: white;
+    padding: 15px;
+    input[data-toggle]{
+        display: none;
+    }
+    input[data-toggle]:checked + label, input[data-toggle]:checked + label:active{
+        background-color: #B9B9B9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .button-group.toggle li:not(first-child){
+        margin: 0 -0.9rem;
+    }
+    div{
+        div{
+            padding:0px !important;
+            margin:0px !important;
+            label{
+                font-weight: bold;
+                font-size: 15px !important;
+                padding:0px;
+                margin:0px;
+                width: 100%;
+            }
+        }
+    }
+    h2{
+        font-size: 20px;
+        text-align: left;
+    }
+    .more{
+        cursor: pointer;
+    }
+    .more + div{
+        display: none;
+    }
+    #buscar{
+        font-size: 15px !important;
+        font-weight: bold;
+        padding: 5px 10px;
+        width: 100%;
+    }
+}
+
+
+#propiedades{
+    li{
+        .inmueble{
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+            background: white;
+            display: block;
+
+            &:hover > .photo img{
+                transform: translateY(-40%) scale(1.35);
+            }
+
+            .photo{
+                height: 165px;
+                overflow: hidden;
+                img{
+                    position: relative;
+                    transform: translateY(-40%) scale(1.25);
+                    transition: all 0.25s linear 0s;
+                    top:50%;
+                    &:hover{
+                        //transform: translateY(-40%) scale(1.35);
+                    }
+                }
+            }
+            .info{
+                padding: 10px;
+                h2{
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+                p{
+                    margin-bottom: 9px;
+                }
+                .descripcion{
+                    color: #00458B;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-transform: capitalize;
+                }
+                .valor{
+                    font-size: 17px;
+                }
+                .icons, .icons div{
+                    margin:0px;
+                    padding:0px;
+                    color:#7F7F7F;
+                    img{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Controles */
+select{
+    text-transform: capitalize;
+    option{
+
+    }
+}
+
+/*Perfil inmueble*/
+#perfil_inmueble{
+    display: none;
+    #precio{
+        color:red;
+        font-size: 30px;
+    }
+    .caracteristica .text-right{
+        font-weight: bold;
+        color: #005EC0;
+    }
+}
+.example-orbit{
+    li{
+        height: 350px;
+    }
+    .img_content{
+        overflow: hidden;
+        height: 350px;
+        text-align: center;
+        img{
+            width: 100%;
+            position: relative;
+            top:-25%;
+        }
+    }
+}
+#atras{
+    font-size: 15px !important;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+/*Inmueble*/
+.inmuebles_lista{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    &:hover{
+        background: #D8FBFC;
+    }
+}
